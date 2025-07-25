@@ -399,7 +399,7 @@
     <div id="book2" class="hidden">
     <p><span style="font-weight: bold;">[로비]/[라운지]<br>[책꽂이]</span><br><br>
     푸른색 표지의 책. 새로 인쇄했는지 종이가 빳빳하다.<br><br>초세계급으로 선발된 인원들에 대한 소개 중에서 쿠루미 J. 쿠로키의 이야기도 찾을 수 있다.<br><br>
-    쿠루미 J. 쿠로키.<br>2003년 출생.<br>2020년 초세계급 해커로 임명.<br><span style="font-weight: bold;">2025년 사망.</span>
+    쿠루미 J. 쿠로키.<br>2004년 출생.<br>2024년 초세계급 해커로 임명.<br><span style="font-weight: bold;">2025년 사망.</span>
 </p>
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
  </div>
@@ -477,7 +477,15 @@
     <button class="nav-button" onclick="goTo('cortkd')">나가기</button>
   </div>
 
+      <!-- 쿠루미 방 : 의자 --> 
+    <div id="evi4" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[쿠루미의 개인실]</span>
+    <br><br>의자가 두 개 놓여 있다.</p>
+    <button class="nav-button" onclick="goTo('kurumiroom')">나가기</button>
+  </div>
 
+
+  
     <!-- 회의실 --> 
     <div id="evi15" class="hidden">
     <p><span style="font-weight: bold;">[회의실]</span><br><br>세미나 등을 진행할 수 있는 회의실.<br>지금은 텅 비어 있고, 며칠 전에 있었던 워크샵의 흔적도 전부 정리되어 있다.<br>특별히 눈에 띄는 점은 없다.</p>
@@ -486,7 +494,7 @@
   
     <!-- 3층 --> 
     <div id="3rdfloor" class="hidden">
-    <p><span style="font-weight: bold;">[3층]</span><br><br>3층은 방 여러 개로 구성된 문화 시설이다.<br>반짝반짝한 문패가 붙은 문들이 늘어서 있지만 더는 마음이 들뜨지 않는다.<br>창문 너머로는 섬의 모습이 내려다보인다.<br>저 멀리 메모리얼 파크에 묘비 다섯 개가 늘어서 있다... 이번에는 몇 개가 더해지게 될까?</p>
+    <p><span style="font-weight: bold;">[3층]</span><br><br>3층은 방 여러 개로 구성된 문화 시설이다.<br>반짝반짝한 문패가 붙은 문들이 늘어서 있지만 더는 마음이 들뜨지 않는다.</p>
     <button onclick="goTo('elevator')">엘리베이터</button><br>
     <button onclick="goTo('music')">음악실</button>
     <button onclick="goTo('cinema')">영화관</button>
@@ -500,12 +508,6 @@
     <div id="music" class="hidden">
     <p><span style="font-weight: bold;">[음악실]</span><br><br>늘어선 음반이 그림자를 드리우는 음악실. 지금은 볼 만한 것이 없다.</p>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
-  </div>
-
-      <!-- 악기 보관실 --> 
-    <div id="inst" class="hidden">
-    <p><span style="font-weight: bold;">[음악실]/[악기 보관실]</span><br><br>다양한 악기가 보관된 곳.<br>악기의 보관에 최적화된 습도와 온도를 유지하고 있다. 불이 꺼진 탓에 어둑하다.<br>폴라리스가 평소에 사용하던 베이스 기타는 보이지 않는다.</p>
-    <button class="nav-button" onclick="goTo('music')">나가기</button>
   </div>
 
       <!-- 영화관 --> 
@@ -527,55 +529,62 @@
   </div>
   
       <!-- !!폴라리스 시체 --> 
-    <div id="evi5" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
-    포멜하우트의 시체.<br>상반신, 손, 무릎... 피부 전체적으로 화상 자국이 있다. </p>
-    <button onclick="goTo('face')">얼굴을 살펴본다</button><br>
-    <button onclick="goTo('evi6')">손과 발을 살펴본다</button><br>
-    <button onclick="goTo('evi9')">옷을 살펴본다</button><br>
-    <button class="nav-button" onclick="goTo('shower')">나가기</button>
+    <div id="polasiche" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+    눈을 감고 있는 쿠루미의 시체. 더없이 평온해 보이지만, 이제는 어떤 말을 걸어도 대답하지 않는다.</p>
+    <button onclick="goTo('evi1')">얼굴을 살펴본다</button><br>
+    <button onclick="goTo('whole')">전체적인 상태</button><br>
+    <button onclick="goTo('wnqus')">주변의 상태</button><br>
+    <button class="nav-button" onclick="goTo('secdoor')">나가기</button>
   </div>
 
       <!-- !!폴라리스 시체 --> 
-    <div id="face" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
-    두 눈은 감기지 않은 채다. 입은 테이프로 막혀 있다.</p>
-   <button class="nav-button" onclick="goTo('evi5')">나가기</button>
+    <div id="evi1" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+    입가에서 희미한 아몬드 냄새가 난다.</p>
+   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
   </div>
 
       <!-- !!폴라리스 시체 --> 
-    <div id="evi6" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
-양손과 양발이 밧줄로 단단히 고정되어 묶여 있다.<br>강하게 묶여 있는 탓에 어지간해서는 풀기 어려울 것 같다.<br>
-밧줄에서는 살짝 탄 향이 난다.</p>
-    <button id="tkdcj" onclick="ev7('tkdcj')">잘 관찰해 본다</button><br>
-  <button id="thswkrnr" onclick="ev8('thswkrnr')">밧줄을 살펴본다</button><br>
-    <p id="evi7-result"></p>
-    <p id="evi8-result"></p>
-   <button class="nav-button" onclick="goTo('evi5')">나가기</button>
+    <div id="whole" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+ 눈에 띄는 외상은 없다. 평범하게 잠에 든 것처럼 보인다.</p>
+   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
   </div>
 
         <!-- !!폴라리스 시체 --> 
-    <div id="evi7" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
-밧줄은 무척 단단히 묶여 있어, 초보자의 솜씨라고는 생각할 수 없다.<br>어느 정도 근력이 있고, 로프를 사용한 경험이 있는 사람이 묶은 것 아닐까?</p>
-   <button class="nav-button" onclick="goTo('evi6')">나가기</button>
+    <div id="wnqus" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+시체의 주변에는 <span style="color: #202e70;">작은 통</span> 같은 것과 <span style="color: #202e70;">노트북</span>이 놓여 있다.</p>
+      <button onclick="goTo('tong')">작은 통</button>
+        <button onclick="goTo('ntb')">노트북</button><br>
+   <button class="nav-button" onclick="goTo('polasiche')">나가기</button>
   </div>
 
-          <!-- !!폴라리스 시체 --> 
-    <div id="evi8" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
-옷과 달리 밧줄은 피부에 달라붙지 않은 상태다.</p>
-   <button class="nav-button" onclick="goTo('evi6')">나가기</button>
+
+      <!-- !!폴라리스 시체 --> 
+    <div id="tong" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+주변에 굴러다니던 통을 자세히 보니, 작은 약병이다.</p>
+      <button id="tkdcj" onclick="ev2('tkdcj')">잘 관찰해 본다</button><br>
+        <p id="evi2-result"></p>
+   <button class="nav-button" onclick="goTo('wnqus')">나가기</button>
   </div>
 
-          <!-- !!폴라리스 시체 --> 
-    <div id="evi9" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[포멜하우트의 시체]</span><br><br>
-옷가지가 피부에 붙어 녹아 있고, 상반신의 심장 부근은 검게 그을려 있다.</p>
-   <button class="nav-button" onclick="goTo('evi5')">나가기</button>
+      <!-- !!폴라리스 시체 --> 
+    <div id="evi2" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+자세히 살펴보면, '사이안화 칼륨' 이라고 적혀 있다.</p>
+   <button class="nav-button" onclick="goTo('wnqus')">나가기</button>
   </div>
-  
+
+      <!-- !!폴라리스 시체 --> 
+    <div id="ntb" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]<br>[쿠루미의 시체]</span><br><br>
+어제 보았던 쿠루미의 노트북. 바닥에 떨어져 있다.<br>전원은 켜지지 않는다.</p>
+   <button class="nav-button" onclick="goTo('wnqus')">나가기</button>
+  </div>
+
  
       <!-- 도서관 --> 
     <div id="library" class="hidden">
@@ -586,37 +595,16 @@
           <!-- 자유연구실 --> 
     <div id="lab" class="hidden">
     <p><span style="font-weight: bold;">[자유연구실]</span><br><br>학자와 연구자들을 위한 자유연구실.<br><span style="color: #3f40d3;">약품 보관실</span>로 향하는 문이 열려 있다.</p>
-    <button onclick="goTo('medicine')">약품 보관실</button><br>
+    <button onclick="goTo('evi5')">약품 보관실</button><br>
     <button class="nav-button" onclick="goTo('3rdfloor')">나가기</button>
     </div>   
 
    <!-- 약품보관실 --> 
-    <div id="medicine" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>어려운 이름의 약품들이 <span style="color: #3f40d3;">선반</span>에 잔뜩 늘어서 있는 약품 보관실이다.<br>연구실 구석에 <span style="color: #3f40d3;">쓰레기통</span>이 놓여 있다.</p>
-    <button onclick="goTo('sunban')">선반을 확인한다</button><br>   
-    <button onclick="goTo('evi3')">쓰레기통을 연다</button><br>
+    <div id="evi5" class="hidden">
+    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>어려운 이름의 약품들이 늘어선 선반을 확인하면, 한 군데가 비어 있는 것을 알 수 있다.</p>
     <button class="nav-button" onclick="goTo('lab')">나가기</button>
     </div>   
-  
-       <!-- 선반 --> 
-    <div id="sunban" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>선반이 조금 비어 있는 것 같은데... <br> 무엇이 사라진 거지?<br><br>선반 아래쪽에는 <span style="color: #3f40d3;">알코올 램프</span>가 놓여 있다. 원래 이 자리에 있었던가?</p>
-    <button onclick="goTo('evi4')">알코올 램프를 확인한다</button><br>   
-      <button class="nav-button" onclick="goTo('medicine')">나가기</button>
-    </div>   
 
-         <!-- 선반 --> 
-    <div id="evi4" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>누군가가 이미 사용한 것인지, 램프의 심지가 줄어들어 있고 살짝 탄 냄새도 풍긴다.</p>
-      <button class="nav-button" onclick="goTo('sunban')">나가기</button>
-    </div>   
-
-  
-     <!-- 쓰레기통 --> 
-    <div id="evi3" class="hidden">
-    <p><span style="font-weight: bold;">[자유연구실]/[약품 보관실]</span><br><br>빈 약병이 버려져 있다.<br>약품 정보를 보니 안에 들어 있던 약은 '졸피뎀' 인 것 같다.</p>
-    <button class="nav-button" onclick="goTo('medicine')">나가기</button>
-    </div>   
 
         <!-- 4층 --> 
     <div id="4thfloor" class="hidden">
@@ -630,131 +618,39 @@
 
    <!-- 트레이닝룸 --> 
 <div id="training" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]</span><br><br>다양한 <span style="color: #3f40d3;">운동기구</span>가 놓인 트레이닝 룸.<br>한쪽에는 <span style="color: #3f40d3;">샤워실</span>도 배치되어 있다.<br><br>지금은 트레이닝 룸 전체가 정전된 상태다.<br>공증인이 비상용 조명을 가동시켜 주었지만 평소의 조명보다는 밝기가 덜하다.<br>트레이닝 룸의 <span style="color: #3f40d3;">벽면</span>도 조금 신경쓰이는데...</p>
-    <button onclick="goTo('evi12')">운동기구</button>
-    <button onclick="goTo('shower')">샤워실</button>
-    <button onclick="goTo('beokmyeon')">벽면</button><br>
+<p><span style="font-weight: bold;">[트레이닝 룸]</span><br><br>다양한 운동기구가 놓인 트레이닝 룸.<br>변한 것은 없다.</p>
     <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
  </div> 
 
-   <!-- 운동기구 --> 
-<div id="evi12" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
-운동기구들이 원래 위치해 있던 자리보다 어긋나 비틀어져 있다.<br>누군가 부딪히기라도 한 걸까...<br><br>자세 교정용의 <span style="color: #3f40d3;">거울</span>에 무언가 묻어 있다.</p>
-      <button onclick="goTo('evi13')">거울</button><br>
-    <button class="nav-button" onclick="goTo('training')">나가기</button>
- </div> 
-  
-   <!-- 운동기구 --> 
-<div id="evi13" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
-거울에는 누군가의 손자국이 나 있다.</p>
-   <button id="dpgb" onclick="ev14('dpgb')">자세히 본다</button><br>
-     <button id="tkffu" onclick="ev45('tkffu')">생각해 본다</button><br>
-      <p id="evi14-result"></p>
-    <p id="evi45-result"></p>
-    <button class="nav-button" onclick="goTo('training')">나가기</button>
- </div> 
-
-   <!-- 운동기구 --> 
-<div id="evi14" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
-눌린 흔적으로 보아 벽을 짚으며 조금씩 걸어간 듯하다.</p>
-    <button class="nav-button" onclick="goTo('evi13')">나가기</button>
- </div> 
-
-     <!-- 운동기구 --> 
-<div id="evi45" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[운동기구]</span><br><br>
-자국이 눌린 위치와 각도로 추측했을 때, 신장이 꽤 큰 사람이 아닐까?</p>
-    <button class="nav-button" onclick="goTo('evi13')">나가기</button>
- </div> 
-  
-   <!-- 벽면 --> 
-<div id="beokmyeon" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
-<span style="color: #3f40d3;">스위치 커버</span>와 <span style="color: #3f40d3;">콘센트</span>가 벽에 부착되어 있다.<br>벽면을 둘러보다 보니 <span style="color: #3f40d3;">입구 근처</span>에도 눈이 간다.</p>
-    <button onclick="goTo('switch')">스위치 커버</button>
-    <button onclick="goTo('consent')">콘센트</button>
-    <button onclick="goTo('dlqrnrmscj')">입구 근처</button><br>
-    <button class="nav-button" onclick="goTo('training')">나가기</button>
- </div> 
-
-   <!-- 스위치 --> 
-<div id="switch" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
-커버 아래에 있는 것은 트레이닝 룸 전체의 전기를 공급하거나 차단시킬 수 있는 스위치다.</p>
-    <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
- </div> 
-
-   <!-- 콘센트 --> 
-<div id="consent" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
-트레이닝 룸 구석의 콘센트 플러그. 플러그에 꽂힌 전선이 샤워실까지 이어지고 있다.</p>
-    <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
- </div> 
-
-   <!-- 입구 근처 --> 
-<div id="dlqrnrmscj" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[벽면]</span><br><br>
-입구 근처의 구석에 대걸레가 놓여 있다. 살짝 젖어 있는 걸 보면 최근에 사용된 걸까?</p>
-    <button class="nav-button" onclick="goTo('beokmyeon')">나가기</button>
- </div> 
-
-  <!-- 샤워실 --> 
-    <div id="shower" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]</span><br><br>
-비상용 조명만이 켜진 샤워실.<br>내부에 들어서면 공기 중으로 희미한 알코올 향이 난다. 샤워 부스 바닥의 물에 알코올이 섞여 있는 것 같다.<br><span style="color: #3f40d3;">세면대</span>와 <span style="color: #3f40d3;">화장대</span>가 보이고, 안쪽의 <span style="color: #3f40d3;">샤워 부스</span> 중 하나에 <span style="color: #3f40d3;">포멜하우트의 시체</span>가 있다.</p>
-    <button onclick="goTo('shower1')">세면대</button>
-    <button onclick="goTo('shower2')">화장대</button><br>
-    <button onclick="goTo('shower3')">샤워 부스</button>    
-    <button onclick="goTo('evi5')">포멜하우트의 시체</button><br>
-    <button id="tkdfj" onclick="ev10('tkdfj')">알코올 냄새에 대해 생각해 본다</button><br>
-    <p id="evi10-result"></p>
-    <button class="nav-button" onclick="goTo('training')">나가기</button>
-    </div>   
-
-   <!-- 샤워실 --> 
-<div id="evi10" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]</span><br><br>
-인화성 물질인 알코올 중으로 스파크가 발생하면 감전과 폭발의 위험이 있다는 것이 생각난다.</p>
-    <button class="nav-button" onclick="goTo('shower')">나가기</button>
- </div> 
-
-   <!-- 샤워부스 --> 
-<div id="shower3" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[샤워 부스]</span><br><br>
-배수구가 얇은 판으로 막혀 있다.<br>그 때문인지, 샤워기에서 흘러나온 물이 <span style="color: #3f40d3;">바닥</span>에 차올라 있다.<br>걸을 때마다 찰박거리는 소리가 난다.</p>
-<button onclick="goTo('evi11')">바닥을 본다</button><br>
-<button class="nav-button" onclick="goTo('shower')">나가기</button>
- </div> 
-
-   <!-- 샤워부스 --> 
-<div id="evi11" class="hidden">
-<p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[샤워 부스]</span><br><br>
-피복이 벗겨진 채 손상된 전선이 바닥에 늘어져 있다.</p>
-<button class="nav-button" onclick="goTo('shower3')">나가기</button>
- </div> 
-  
-    <!-- 세면대 --> 
-    <div id="shower1" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[세면대]</span><br><br>
-세면대 위에 '소독용 알코올' 병 여러 개가 사용된 채 굴러다니고 있다.</p>
-    <button class="nav-button" onclick="goTo('shower')">나가기</button>
-    </div>   
-
-    <!-- 화장대 --> 
-    <div id="shower2" class="hidden">
-    <p><span style="font-weight: bold;">[트레이닝 룸]/[샤워실]<br>[화장대]</span><br><br>
-화장대에 부착된 콘센트가 눈에 들어온다.<br>드라이기, 고데기, 손 건조기 등의 콘센트가 다량 꽂혀 있다.<br>전선 중 몇 개는 트레이닝 룸의 운동기구와도 연결되어 있다.<br>지금은 정전 상태지만, 전류가 상당했을 것 같다...</p>
-    <button class="nav-button" onclick="goTo('shower')">나가기</button>
-    </div>   
-  
    <!-- 감시카메라룸 --> 
 <div id="strange" class="hidden">
 <p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
-잠겨 있다.</p>
+공증인이 잠그는 것을 깜빡한 걸까? 문이 열려 있다.<br>안에서는 CCTV 영상이 재생되고 있다.</p>
+    <button onclick="goTo('evi6')">최근의 CCTV를 확인한다</button>  
     <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
+ </div> 
+
+   <!-- 감시카메라룸 --> 
+<div id="strange" class="hidden">
+<p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
+공증인이 잠그는 것을 깜빡한 걸까? 문이 열려 있다.<br>안에서는 CCTV 영상이 재생되고 있다.</p>
+    <button onclick="goTo('evi6')">최근의 CCTV를 확인한다</button>  
+    <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
+ </div> 
+
+     <!-- 감시카메라룸 --> 
+<div id="evi6" class="hidden">
+<p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
+새벽 4시 반 경 쿠루미가 누군가와 함께 이동하는 장면을 확인할 수 있다.<br>어두워서 상대방의 모습은 제대로 보이지 않는데...</p>
+    <button onclick="goTo('strange1')">자세히 본다</button>  
+    <button class="nav-button" onclick="goTo('strange')">나가기</button>
+ </div> 
+
+     <!-- 감시카메라룸 --> 
+<div id="strange1" class="hidden">
+<p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
+상대는 쿠루미보다 키가 훨씬 커 보인다.<br>최소한 20cm는 넘게 차이나는 것 같다.</p>
+    <button class="nav-button" onclick="goTo('strange')">나가기</button>
  </div> 
 
     <!-- 카페 --> 
@@ -1108,40 +1004,6 @@ function goTo(page) {
     if (['evi7'].includes(page)) {
     currentUser.evid7 = true;
   }
-    if (['evi8'].includes(page)) {
-    currentUser.evid8 = true;
-  }
-    if (['evi9'].includes(page)) {
-    currentUser.evid9 = true;
-  }
-    if (['evi10'].includes(page)) {
-    currentUser.evid10 = true;
-  }
-    if (['evi11'].includes(page)) {
-    currentUser.evid11 = true;
-  }
-    if (['evi12'].includes(page)) {
-    currentUser.evid12 = true;
-  }
-    if (['evi13'].includes(page)) {
-    currentUser.evid13 = true;
-  }
-      if (['evi14'].includes(page)) {
-    currentUser.evid14 = true;
-  }
-        if (['evi45'].includes(page)) {
-    currentUser.evid45 = true;
-  }
-      if (['evi15'].includes(page)) {
-    currentUser.evid15 = true;
-  }
-        if (['evi16'].includes(page)) {
-    currentUser.evid16 = true;
-  }
-      if (['evi17'].includes(page)) {
-    currentUser.evid17 = true;
-  }
-
     if (page === 'starting-point') {
     document.getElementById('persistent-nav').style.display = 'flex';
   }}
@@ -1241,57 +1103,34 @@ function goBack() {
 
 //여기서부터 특정 장소에서 사용하도록 되어 있는 함수!!!!
 function ev2(buttonId) {
-  if (currentUser.INT >= 3) {
+  if (currentUser.OBS >= 3) {
     goTo('evi2');
   } else {
     const result = document.getElementById('evi2-result');
-    result.innerText = "열심히 생각해 봤지만 무엇이 사라졌는지 잘 모르겠다.";
-  }
-}
-function ev14(buttonId) {
-  if (currentUser.OBS >= 5) {
-    goTo('evi14');
-  } else {
-    const result = document.getElementById('evi14-result');
-    result.innerText = "이 각도에서는 잘 보이지 않는 것 같다.";
-  }
-}
-function ev45(buttonId) {
-  if (currentUser.OBS >= 5 && currentUser.INT >= 4) {
-    goTo('evi45');
-  } else {
-    const result = document.getElementById('evi45-result');
-    result.innerText = "생각해 봐도 떠오르는 것이 없다.";
-  }
-}
-function ev7(buttonId) {
-  if (currentUser.INT >= 4) {
-    goTo('evi7');
-  } else {
-    const result = document.getElementById('evi7-result');
-    result.innerText = "딱히 떠오르는 것은 없다.";
-  }
-}
-function ev8(buttonId) {
-  if (currentUser.OBS >= 5 && currentUser.INT >= 4 && currentUser.STR >= 4) {
-    goTo('evi8');
-  } else {
-    const result = document.getElementById('evi8-result');
     result.innerText = "눈에 띄는 것은 없다.";
   }
 }
-function ev10(buttonId) {
-  if (currentUser.INT >= 4) {
-    goTo('evi10');
+function ev3(buttonId) {
+  if (currentUser.OBS >= 3) {
+    goTo('evi3');
   } else {
-    const result = document.getElementById('evi10-result');
-    result.innerText = "딱히 떠오르는 것은 없다.";
+    const result = document.getElementById('evi3-result');
+    result.innerText = "짚이는 것은 없다.";
   }
-}  
+}
+function ev4(buttonId) {
+  if (currentUser.INT >= 5) {
+    goTo('evi4');
+  } else {
+    const result = document.getElementById('evi4-result');
+    result.innerText = "생각해 봐도 떠오르는 것이 없다.";
+  }
+}
+
 //★★★★★퀴즈★★★★★
 function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
-  if (input === "세토 아이비") { // 원하는 정답
+  if (input === "쿠루미 J. 쿠로키") { // 원하는 정답
     const codebox = document.getElementById('codebox');
     goTo('evi17');
   } else {
@@ -1327,58 +1166,25 @@ function loadFinalReport() {
 
 
   if (currentUser.evid1 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">레스토랑의 물컵 두 잔</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">시체 입가에서 나는 아몬드 향</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid2 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">도구함에서 사라진 밧줄과 테이프</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">시체 주변의 '사이안화 칼륨' 병</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid3 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">버려진 '졸피뎀'</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">쿠루미의 개인실에서 발견된 두 사람 분의 메모</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid4 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">사용된 알코올 램프</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">쿠루미의 개인실의 의자 두 개</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid5 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">온몸의 화상 자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">약품 보관실의 빈 자리</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
     if (currentUser.evid6 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">양손과 양발을 묶은 밧줄</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">쿠루미가 누군가와 함께 이동하는 CCTV 영상</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   if (currentUser.evid7 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">밧줄은 로프 사용에 능숙하고 근력이 있는 사람이 묶었을 것으로 추정</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evid8 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">옷과 달리 밧줄은 피부에 달라붙어 있지 않음</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evid9 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">피부에 붙어 녹아 있는 의류, 심장의 그을린 자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evid10 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">샤워실의 알코올로 인한 감전 및 폭발의 위험</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evid11 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">샤워실 바닥의 손상된 전선</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evid12 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">어긋난 운동기구</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-    if (currentUser.evid13 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">트레이닝 룸 거울의 손자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-  if (currentUser.evid14 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">벽을 짚으며 걸어간 자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-    if (currentUser.evid45 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">신장이 꽤 큰 사람의 손자국으로 추정</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-      if (currentUser.evid15 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">어수선한 회의실</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-      if (currentUser.evid16 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">회의실의 핏자국</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
-  }
-        if (currentUser.evid17 === true) {
-    lines.push({ html: `<div style="color: black; font-style: italic;">살짝 헐거워진 세토의 개인실 문 손잡이</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
+    lines.push({ html: `<div style="color: black; font-style: italic;">로렘의 기록체와 섬 통제 시스템 분리에 대한 논의</div>`, align: 'right', lineStyle: 'color: black; font-style: italic;' });
   }
   lines.push({ html: `<div style="color: #888">별도의 제출은 필요로 하지 않습니다.</div>`, align: 'right', lineStyle: 'color: #888;' });
 
