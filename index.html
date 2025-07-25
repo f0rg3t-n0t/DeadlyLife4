@@ -307,11 +307,47 @@
   <img src="report.png" class="menu-button report" onclick="goTo('report')" alt="종료">
   </div>
   
-  <!-- 스타팅 포인트 -->  
+    <!-- 스타팅 포인트 -->  
   <div id="starting-point" class="hidden">
-    <p><span style="font-weight: bold;">[건물 입구]</span><br><br>흰 관을 연상시키는 건물. 그 입구에 다다른다.<br>돌로 된 정문 표면에는 알 수 없는 문자가 빼곡히 음각으로 새겨져 있다. 무엇을 기록한 것인지는 알 수 없으나, 음산하고 기분 나쁜 분위기가 풍긴다.<br>이번 사건은 실내에서 벌어졌으니 바깥으로 나갈 필요까지는 없겠지...</p>
+    <p><span style="font-weight: bold;">[건물 입구]</span><br><br>흰 관을 연상시키는 건물. 그 입구에 다다른다.<br>돌로 된 정문 표면에는 알 수 없는 문자가 빼곡히 음각으로 새겨져 있다.<br>공증인의 말로는 건물 안팎으로 몇몇 시설을 재정비했다고 한다.</p>
     <button onclick="goTo('inside')">건물 안으로 들어간다</button>
+    <button onclick="goTo('dawson')">숨겨진 공간을 확인한다</button>
   </div>
+
+  <!-- 도슨 씨가 찾아낸 공간 -->  
+  <div id="dawson" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]</span><br><br>복도를 끝까지 따라가면 나오는 것은, 연구실로 보이는 둥근 방이다.<br>벽을 빼곡하게 메우다시피 읽을 수 없는 메모들이 붙어 있다. 방 전체에 서류가 흩어져 있고, 맞은편에는 문패가 없는 문 두 개가 보인다.<br>하나는 <span style="color: #3f40d3;">철로 된 문</span>, 다른 하나는 <span style="color: #3f40d3;">아치형 문</span>이다.</p>
+        <button onclick="goTo('diedoor')">철제 문</button>
+        <button onclick="goTo('secdoor')">아치형 문</button><br>
+      <button class="nav-button" onclick="goTo('dawson')">나가기</button>
+  </div>
+
+        <!-- 로마에다쿤 -->  
+  <div id="diedoor" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[철제 문]</span><br><br>
+육중한 철제 문.<br>아무것도 쓰여 있지 않은 문 앞에 서자 희미하게 불쾌한 냄새가 난다.<br>열기 위한 자동 버튼이 문 옆에 부착되어 있다.</p>
+   <button onclick="goTo('die1')">들어간다</button><br>   
+    <button class="nav-button" onclick="goTo('sec1')">나가기</button>
+  </div>
+
+          <!-- 로마에다쿤 -->  
+  <div id="die1" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[철제 문으로 닫힌 방]</span><br><br>
+문을 열고 들어가면 비릿한 냄새가 확 끼쳐 구역질이 난다.<br>눈에 띄는 가구나 설비 없이 대체로 비어 있는 방.<br>여기저기 검붉게 변색된 자국이 있다...<br>꼭 숨이 막히는 것 같은 기분이다.</p>
+    <button class="nav-button" onclick="goTo('diedoor')">나가기</button>
+  </div>
+
+           <!-- 로마에다쿤 -->  
+  <div id="secdoor" class="hidden">
+    <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]</span><br><br>
+아치형 문을 넘어 나아가면, 그곳에 있는 것은 복잡하게 얽힌 회로, 수많은 전선들...<br>웅웅 소리를 내며 가동되고 있는 기계들이다.<br>함부로 건드려서는 안 될 것 같다.<br><br>중앙에 있는 컴퓨터 근처에 <span style="color: #3f40d3;">쿠루미 J. 쿠로키의 시체</span>가 누워 있다.</p>
+       <button onclick="goTo('polasiche')">쿠루미 J. 쿠로키의 시체</button><br>
+    <button class="nav-button" onclick="goTo('sec1')">나가기</button>
+  </div>
+
+
+
+  
 
   <!-- 내부 1층 --> 
   <div id="inside" class="hidden">
