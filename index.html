@@ -319,7 +319,7 @@
     <p><span style="font-weight: bold;">[연구실]</span><br><br>복도를 끝까지 따라가면 나오는 것은, 연구실로 보이는 둥근 방이다.<br>벽을 빼곡하게 메우다시피 읽을 수 없는 메모들이 붙어 있다. 방 전체에 서류가 흩어져 있고, 맞은편에는 문패가 없는 문 두 개가 보인다.<br>하나는 <span style="color: #3f40d3;">철로 된 문</span>, 다른 하나는 <span style="color: #3f40d3;">아치형 문</span>이다.</p>
         <button onclick="goTo('diedoor')">철제 문</button>
         <button onclick="goTo('secdoor')">아치형 문</button><br>
-      <button class="nav-button" onclick="goTo('dawson')">나가기</button>
+      <button class="nav-button" onclick="goTo('starting-point')">나가기</button>
   </div>
 
         <!-- 로마에다쿤 -->  
@@ -451,12 +451,11 @@
     <p><span style="font-weight: bold;">[내빈용 객실]/[쿠루미의 개인실]</span>
     <br><br>책상 위에는 종이 여러 장과 펜 두 개가 나뒹굴고 있다.<br>
 종이에는 수식이나 계산 이력 따위가 마구잡이로 채워져 있다.</p>
-    <button onclick="goTo('cortkd')">책상</button><br>
       <button id="mvfds" onclick="ev3('mvfds')">자세히 본다</button><br>
       <button id="mvfs" onclick="ev7('mvfs')">내용에 대해 생각해 본다</button><br>
     <p id="evi3-result"></p>
     <p id="evi7-result"></p>
-    <button class="nav-button" onclick="goTo('suite')">나가기</button>
+    <button class="nav-button" onclick="goTo('kurumiroom')">나가기</button>
   </div>
   
     <!-- 쿠루미 방 --> 
@@ -1108,9 +1107,9 @@ function ev3(buttonId) {
     result.innerText = "짚이는 것은 없다.";
   }
 }
-function ev4(buttonId) {
+function ev7(buttonId) {
   if (currentUser.INT >= 5) {
-    goTo('evi4');
+    goTo('evi7');
   } else {
     const result = document.getElementById('evi4-result');
     result.innerText = "생각해 봐도 떠오르는 것이 없다.";
