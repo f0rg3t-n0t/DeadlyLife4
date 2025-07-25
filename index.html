@@ -351,20 +351,11 @@
 
   <!-- 내부 1층 --> 
   <div id="inside" class="hidden">
-    <p><span style="font-weight: bold;">[건물 1층]</span><br><br>건물 1층.<br>정면에 방문객을 맞이하는 <span style="color: #202e70;">로비</span>가 보이고, 로비 뒤편에는 유리로 된 <span style="color: #202e70;">엘리베이터</span>가 배치되어 있다.<br><span style="color: #202e70;">레스토랑</span>으로 향하는 문이 조금 열려 있는 것 같다.</p>
+    <p><span style="font-weight: bold;">[건물 1층]</span><br><br>건물 1층.<br>정면에 방문객을 맞이하는 <span style="color: #202e70;">로비</span>가 보이고, 로비 뒤편에는 유리로 된 <span style="color: #202e70;">엘리베이터</span>가 배치되어 있다.</p>
     <button onclick="goTo('lobby')">로비</button>
     <button onclick="goTo('elevator')">엘리베이터</button>
-    <button onclick="goTo('evi1')">레스토랑</button><br>
     <button class="nav-button" onclick="goTo('starting-point')">건물 입구로 돌아가기</button>
   </div>
-
-
-  <!-- 레스토랑 --> 
-  <div id="evi1" class="hidden">
-    <p><span style="font-weight: bold;">[건물 1층]/[레스토랑]</span><br><br>열린 문을 통해 레스토랑 안으로 들어가 보면,<br>조리실의 선반에 씻은 물컵이 두 개 있는 것을 확인할 수 있다.</p>
-    <button class="nav-button" onclick="goTo('inside')">나가기</button>
-  </div>
-
 
     <!-- 로비 --> 
     <div id="lobby" class="hidden">
@@ -376,7 +367,7 @@
 
     <!-- 로비:카운터 --> 
     <div id="counter" class="hidden">
-    <p><span style="font-weight: bold;">[로비]<br>[카운터]</span><br><br>보통이라면 직원이 서 있어야 할 카운터 너머에는 아무도 없다.<br>조명이 몇 개 꺼져 어둑하고, 공증인의 목소리조차 들리지 않는다.<br>이번 사건을 조사하고 나면, 또 이 아래에 있는 재판정으로...</p>
+    <p><span style="font-weight: bold;">[로비]<br>[카운터]</span><br><br>보통이라면 직원이 서 있어야 할 카운터 너머에는 아무도 없다.<br>조명이 몇 개 꺼져 어둑하고, 공증인의 목소리도 들리지 않는다.<br>...하지만 누군가가 지켜보고 있다는 착각이 든다.</p>
     <button class="nav-button" onclick="goTo('lobby')">나가기</button>
   </div>
 
@@ -407,14 +398,12 @@
       <!-- 로비:라운지:책2 --> 
     <div id="book2" class="hidden">
     <p><span style="font-weight: bold;">[로비]/[라운지]<br>[책꽂이]</span><br><br>
-    푸른색 표지의 책. 새로 인쇄했는지 종이가 빳빳하다.<br><br>초세계급으로 선발된 인원들에 대한 소개 중에서 포멜하우트 에빌라와 세토 아이비의 이야기도 찾을 수 있다.<br><br>
-    포멜하우트 에빌라.<br>1994년 출생.<br>2018년 초세계급 탐험가로 임명.<br><span style="font-weight: bold;">2025년 사망.</span><br><br>세토 아이비.<br>1998년 출생.<br>2019년 초세계급 피아니스트로 임명.<br>2025년 1월 국제 오케스트라 합주 경연 대회 대상 수상을 마지막으로 대회 출전을 중단...<br>그보다 더 아래쪽은 종이가 뜯겨나가 있어 읽을 수 없다.
+    푸른색 표지의 책. 새로 인쇄했는지 종이가 빳빳하다.<br><br>초세계급으로 선발된 인원들에 대한 소개 중에서 쿠루미 J. 쿠로키의 이야기도 찾을 수 있다.<br><br>
+    쿠루미 J. 쿠로키.<br>2003년 출생.<br>2020년 초세계급 해커로 임명.<br><span style="font-weight: bold;">2025년 사망.</span>
 </p>
     <button class="nav-button" onclick="goTo('bookshelf')">나가기</button>
  </div>
 
-
-  
       <!-- 로비:엘리베이터:탑승 --> 
     <div id="elevator" class="hidden">
     <p><span style="font-weight: bold;">[엘리베이터]</span><br><br>1층부터 4층까지, 원하는 층으로 이동할 수 있다.</p>
@@ -435,9 +424,8 @@
   
     <!-- 내빈용 객실 --> 
     <div id="suite" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]</span><br><br>초세계급들을 위한 개인실.<br>문 앞에 붙은 명패에는 각자의 이름과 재능이 쓰여 있다.<br>객실이 이어지는 복도 끝에는 '<span style="color: #202e70;">비품실</span>'이라고 표시된 작은 방이 보인다.</p>
+    <p><span style="font-weight: bold;">[내빈용 객실]</span><br><br>초세계급들을 위한 개인실.<br>문 앞에 붙은 명패에는 각자의 이름과 재능이 쓰여 있다.<br>객실이 이어지는 복도 끝에는 '비품실'이라고 표시된 작은 방이 보인다.</p>
     <button onclick="goTo('suite1')">개인실을 조사한다</button>
-    <button onclick="goTo('bipum')">비품실</button><br>
     <button class="nav-button" onclick="goTo('2ndfloor')">나가기</button>
   </div>
 
@@ -451,53 +439,49 @@
  </div>
 
   
-    <!-- 세토 방 --> 
-    <div id="evi17" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[세토의 개인실 방문]</span>
-    <br><br>잠겨 있어 열리지 않는다.<br>그런데 문 손잡이가 살짝 헐거워져 있다. 한 번에 열지 못하고 힘들게 연 것 같은 느낌인데...</p>
+    <!-- 쿠루미 방 --> 
+    <div id="kurumiroom" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[쿠루미의 개인실]</span>
+    <br><br>모두에게 제공되는 것과 크게 다르지 않은 쿠루미의 방.<br><span style="color: #202e70;">책상</span>과 <span style="color: #202e70;">의자</span> 근처가 신경쓰인다.</p>
+    <button onclick="goTo('cortkd')">책상</button><br>
+    <button onclick="goTo('evi4')">의자</button><br>
     <button class="nav-button" onclick="goTo('suite')">나가기</button>
   </div>
 
-  
-    <!-- 비품실 --> 
-    <div id="bipum" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[비품실]</span><br><br>생활에 필요한 각종 비품을 구비해 두는 곳.<br>휴지나 종이컵 같은 일회용품부터 각종 청소용구까지, 없는 게 없다.<br>비품실 한가운데에 커다란 <span style="color: #202e70;">도구함</span>이 뚜껑이 닫힌 채로 놓여 있다.</p>
-    <button onclick="goTo('ehrngka')">도구함을 연다</button><br>
+    
+    <!-- 쿠루미 방 --> 
+    <div id="cortkd" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[쿠루미의 개인실]</span>
+    <br><br>책상 위에는 종이 여러 장과 펜 두 개가 나뒹굴고 있다.<br>
+종이에는 수식이나 계산 이력 따위가 마구잡이로 채워져 있다.</p>
+    <button onclick="goTo('cortkd')">책상</button><br>
+      <button id="mvfds" onclick="ev3('mvfds')">자세히 본다</button><br>
+      <button id="mvfs" onclick="ev7('mvfs')">내용에 대해 생각해 본다</button><br>
+    <p id="evi3-result"></p>
+    <p id="evi7-result"></p>
     <button class="nav-button" onclick="goTo('suite')">나가기</button>
   </div>
   
-      <!-- 비품실 : 도구함 --> 
-    <div id="ehrngka" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[비품실]</span><br><br>전에 확인했을 때와 비교하면 도구함이 조금 빈 것 같은데...<br>기분 탓인가?</p>
-    <button id="mvfds" onclick="ev2('mvfds')">잘 생각해 본다</button><br>
-    <p id="evi2-result"></p>
-    <button class="nav-button" onclick="goTo('bipum')">나가기</button>
+    <!-- 쿠루미 방 --> 
+    <div id="evi3" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[쿠루미의 개인실]</span>
+    <br><br>두 사람 분의 글씨체가 적혀 있다.<br>
+하나는 동글고 또박또박한 글씨, 하나는 완전히 악필이다...</p>
+    <button class="nav-button" onclick="goTo('cortkd')">나가기</button>
   </div>
 
-        <!-- 비품실 : 도구함 --> 
-    <div id="evi2" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]/[비품실]</span><br><br>밧줄과 테이프가 사라져 있다.</p>
-    <button class="nav-button" onclick="goTo('bipum')">나가기</button>
+      <!-- 쿠루미 방 --> 
+    <div id="evi7" class="hidden">
+    <p><span style="font-weight: bold;">[내빈용 객실]/[쿠루미의 개인실]</span>
+    <br><br>확인해 보니 로렘의 기록체와 섬 전체 시스템에 대한 논의가 이루어진 것 같다.<br>둘을 분리하는 방법에 대해 고민한 흔적인가?</p>
+    <button class="nav-button" onclick="goTo('cortkd')">나가기</button>
   </div>
-  
+
+
     <!-- 회의실 --> 
     <div id="evi15" class="hidden">
-    <p><span style="font-weight: bold;">[회의실]</span><br><br>세미나 등을 진행할 수 있는 회의실.<br>문을 열면 내부가 어수선하다. 한 차례 몸싸움이라도 있었던 것처럼...<br>회의실 <span style="color: #202e70;">문</span>과 <span style="color: #202e70;">책상</span>에 특이한 점이 있다.</p>
-    <button onclick="goTo('pcdesk')">문</button>
-    <button onclick="goTo('evi16')">책상</button><br>
+    <p><span style="font-weight: bold;">[회의실]</span><br><br>세미나 등을 진행할 수 있는 회의실.<br>지금은 텅 비어 있고, 며칠 전에 있었던 워크샵의 흔적도 전부 정리되어 있다.<br>특별히 눈에 띄는 점은 없다.</p>
     <button class="nav-button" onclick="goTo('2ndfloor')">나가기</button>
-  </div>
-
-    <!-- 회의실 : 문 --> 
-    <div id="pcdesk" class="hidden">
-    <p><span style="font-weight: bold;">[회의실]/[문]</span><br><br>문 근처 바닥에 핏자국이 남아 있다.</p>
-    <button class="nav-button" onclick="goTo('evi15')">나가기</button>
-  </div>
-
-      <!-- 회의실 : 책상 --> 
-    <div id="evi16" class="hidden">
-    <p><span style="font-weight: bold;">[회의실]/[책상]</span><br><br>세토 아이비가 이 근처에 쓰러져 있었지...<br>모서리에 무언가가 세게 부딪힌 흔적이 있고, 책상 아래 바닥과 모서리에 소량의 혈흔이 남아 있다.</p>
-    <button class="nav-button" onclick="goTo('evi15')">나가기</button>
   </div>
   
     <!-- 3층 --> 
