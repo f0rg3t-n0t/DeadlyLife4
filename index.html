@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>Chapter 3-DEADLY LIFE</title>
+  <title>Chapter 4-DEADLY LIFE</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet"/>
   <style>
 
@@ -309,7 +309,7 @@
   
     <!-- 스타팅 포인트 -->  
   <div id="starting-point" class="hidden">
-    <p><span style="font-weight: bold;">[건물 입구]</span><br><br>흰 관을 연상시키는 건물. 그 입구에 다다른다.<br>돌로 된 정문 표면에는 알 수 없는 문자가 빼곡히 음각으로 새겨져 있다.<br>공증인의 말로는 건물 안팎으로 몇몇 시설을 재정비했다고 한다.</p>
+    <p><span style="font-weight: bold;">[건물 입구]</span><br><br>흰 관을 연상시키는 건물. 그 입구에 다다른다.<br>돌로 된 정문 표면에는 알 수 없는 문자가 빼곡히 음각으로 새겨져 있다.</p>
     <button onclick="goTo('inside')">건물 안으로 들어간다</button>
     <button onclick="goTo('dawson')">숨겨진 공간을 확인한다</button>
   </div>
@@ -327,7 +327,7 @@
     <p><span style="font-weight: bold;">[연구실]/[철제 문]</span><br><br>
 육중한 철제 문.<br>아무것도 쓰여 있지 않은 문 앞에 서자 희미하게 불쾌한 냄새가 난다.<br>열기 위한 자동 버튼이 문 옆에 부착되어 있다.</p>
    <button onclick="goTo('die1')">들어간다</button><br>   
-    <button class="nav-button" onclick="goTo('sec1')">나가기</button>
+    <button class="nav-button" onclick="goTo('dawson')">나가기</button>
   </div>
 
           <!-- 로마에다쿤 -->  
@@ -342,18 +342,15 @@
     <p><span style="font-weight: bold;">[연구실]/[데이터 관제실]</span><br><br>
 아치형 문을 넘어 나아가면, 그곳에 있는 것은 복잡하게 얽힌 회로, 수많은 전선들...<br>웅웅 소리를 내며 가동되고 있는 기계들이다.<br>함부로 건드려서는 안 될 것 같다.<br><br>중앙에 있는 컴퓨터 근처에 <span style="color: #3f40d3;">쿠루미 J. 쿠로키의 시체</span>가 누워 있다.</p>
        <button onclick="goTo('polasiche')">쿠루미 J. 쿠로키의 시체</button><br>
-    <button class="nav-button" onclick="goTo('sec1')">나가기</button>
+    <button class="nav-button" onclick="goTo('dawson')">나가기</button>
   </div>
-
-
-
   
 
   <!-- 내부 1층 --> 
   <div id="inside" class="hidden">
     <p><span style="font-weight: bold;">[건물 1층]</span><br><br>건물 1층.<br>정면에 방문객을 맞이하는 <span style="color: #202e70;">로비</span>가 보이고, 로비 뒤편에는 유리로 된 <span style="color: #202e70;">엘리베이터</span>가 배치되어 있다.</p>
     <button onclick="goTo('lobby')">로비</button>
-    <button onclick="goTo('elevator')">엘리베이터</button>
+    <button onclick="goTo('elevator')">엘리베이터</button><br>
     <button class="nav-button" onclick="goTo('starting-point')">건물 입구로 돌아가기</button>
   </div>
 
@@ -424,8 +421,8 @@
   
     <!-- 내빈용 객실 --> 
     <div id="suite" class="hidden">
-    <p><span style="font-weight: bold;">[내빈용 객실]</span><br><br>초세계급들을 위한 개인실.<br>문 앞에 붙은 명패에는 각자의 이름과 재능이 쓰여 있다.<br>객실이 이어지는 복도 끝에는 '비품실'이라고 표시된 작은 방이 보인다.</p>
-    <button onclick="goTo('suite1')">개인실을 조사한다</button>
+    <p><span style="font-weight: bold;">[내빈용 객실]</span><br><br>초세계급들을 위한 개인실.<br>문 앞에 붙은 명패에는 각자의 이름과 재능이 쓰여 있다.</p>
+    <button onclick="goTo('suite1')">개인실을 조사한다</button><br>
     <button class="nav-button" onclick="goTo('2ndfloor')">나가기</button>
   </div>
 
@@ -622,19 +619,12 @@
     <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
  </div> 
 
-   <!-- 감시카메라룸 --> 
-<div id="strange" class="hidden">
-<p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
-공증인이 잠그는 것을 깜빡한 걸까? 문이 열려 있다.<br>안에서는 CCTV 영상이 재생되고 있다.</p>
-    <button onclick="goTo('evi6')">최근의 CCTV를 확인한다</button>  
-    <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
- </div> 
 
    <!-- 감시카메라룸 --> 
 <div id="strange" class="hidden">
 <p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
 공증인이 잠그는 것을 깜빡한 걸까? 문이 열려 있다.<br>안에서는 CCTV 영상이 재생되고 있다.</p>
-    <button onclick="goTo('evi6')">최근의 CCTV를 확인한다</button>  
+    <button onclick="goTo('evi6')">최근의 CCTV를 확인한다</button><br>
     <button class="nav-button" onclick="goTo('4thfloor')">나가기</button>
  </div> 
 
@@ -642,7 +632,7 @@
 <div id="evi6" class="hidden">
 <p><span style="font-weight: bold;">[정체불명의 방]</span><br><br>
 새벽 4시 반 경 쿠루미가 누군가와 함께 이동하는 장면을 확인할 수 있다.<br>어두워서 상대방의 모습은 제대로 보이지 않는데...</p>
-    <button onclick="goTo('strange1')">자세히 본다</button>  
+    <button onclick="goTo('strange1')">자세히 본다</button><br>
     <button class="nav-button" onclick="goTo('strange')">나가기</button>
  </div> 
 
@@ -1132,7 +1122,7 @@ function checkSecretCode() {
   const input = document.getElementById('secret-code-input').value;
   if (input === "쿠루미 J. 쿠로키") { // 원하는 정답
     const codebox = document.getElementById('codebox');
-    goTo('evi17');
+    goTo('kurumiroom');
   } else {
     const result = document.getElementById('secret-code-result');
     result.innerText = "잠겨 있는 방이다.";
